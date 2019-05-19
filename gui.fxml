@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.test">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="anchor" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: GREEN;" VBox.vgrow="ALWAYS">
+         <children>
+            <GridPane fx:id="oppDeck" layoutX="69.0" layoutY="15.0" prefHeight="126.0" prefWidth="531.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="125.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="OppCard1" accessibleText="Player Ones Hand-Card One" fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="OppCard2" fitHeight="125.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="OppPowerUp" fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="opPoints" strokeType="OUTSIDE" strokeWidth="0.0" text="00000" textAlignment="CENTER" wrappingWidth="182.4202880859375" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+            <GridPane layoutX="75.0" layoutY="225.0" prefHeight="126.0" prefWidth="531.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="BoardCard1" accessibleText="Player Ones Hand-Card One" fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BoardCard2" fitHeight="125.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BoardCard3" fitHeight="125.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BoardCard4" fitHeight="125.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BoardCard5" fitHeight="125.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="plDeck" layoutX="270.0" layoutY="430.0" prefHeight="126.0" prefWidth="503.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="100.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="100.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="PlayerCard1" accessibleText="Player Ones Hand-Card One" fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="PlayerCard2" fitHeight="125.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>                  
+                  <ImageView fx:id="PlayerPowerUp" fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="plPoints" strokeType="OUTSIDE" strokeWidth="0.0" text="00000" textAlignment="CENTER" wrappingWidth="182.4202880859375" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>          
+      			<Button fx:id="start" layoutX="773.0" layoutY="275.0" minWidth="80.0" mnemonicParsing="false" onMouseClicked="#startGame" prefWidth="100.0" text="Start Game!" visible="false" />
+      			<Button fx:id="raise" layoutX="773.0" layoutY="175.0" minWidth="80.0" mnemonicParsing="false" prefWidth="100.0" text="Raise " visible="false" />
+      			<Button fx:id="check" layoutX="773.0" layoutY="225.0" minWidth="80.0" mnemonicParsing="false" prefWidth="100.0" text="Call/Check" visible="false" />
+      			<Button fx:id="fold" layoutX="773.0" layoutY="275.0" minWidth="80.0" mnemonicParsing="false" prefWidth="100.0" text="Fold" visible="false" />
+      			<Button fx:id="power" layoutX="773.0" layoutY="325.0" minWidth="80.0" mnemonicParsing="false" prefWidth="100.0" text="Power-Ups" visible="false" />
+      			<Button fx:id="quit" layoutX="773.0" layoutY="375.0" minWidth="80.0" mnemonicParsing="false" prefWidth="100.0" text="Quit" visible="false" />
+            <Text fx:id="pot" layoutX="670.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000000" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Text>
+            <Text fx:id="pltitle" layoutX="15.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Updates:" visible="false" wrappingWidth="225">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="plupdates" layoutX="15.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" visible="false" wrappingWidth="225">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="optitle" layoutX="650.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AI Updates:" visible="false" wrappingWidth="225">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="opupdates" layoutX="650.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="225">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+      			
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
